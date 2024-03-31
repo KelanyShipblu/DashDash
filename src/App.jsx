@@ -1,28 +1,20 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter ,Route } from 'react-router-dom';
+
+import IndexPage from './IndexPage';
+import CompanyRegistrationForm from './CompanyRegistrationForm';
+import UserRegistrationForm from './UserRegistrationForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={IndexPage} />
+        <Route path="/company-registration" component={CompanyRegistrationForm} />
+        <Route path="/user-registration" component={UserRegistrationForm} />
+      </Switch>
+    </Router>
   );
 }
 

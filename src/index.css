@@ -11,3 +11,77 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* styles.css */
+/* styles.css */
+/* styles.css */
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Apply styles to headings */
+h1, h2, h3 {
+  color: #333;
+}
+
+/* Apply styles to buttons */
+button {
+  display: block;
+  width: calc(50% - 10px); /* Equal width for both buttons with spacing */
+  padding: 10px;
+  margin: 5px; /* Add spacing between buttons */
+  background-color: #8589E4; /* New color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Apply styles to links */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Apply styles to forms */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styles to form fields */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Apply styles to form buttons */
+.form-button {
+  width: 100%;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+}
