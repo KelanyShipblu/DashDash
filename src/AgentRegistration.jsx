@@ -1,7 +1,8 @@
-// src/components/CompanyRegistrationForm.js
+// src/components/AgentRegistration.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link component
 
-const CompanyRegistrationForm = () => {
+const AgentRegistration = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
@@ -22,7 +23,9 @@ const CompanyRegistrationForm = () => {
 
   return (
     <div>
-      <h2>Company Registration Form</h2>
+      <Link to="/"><p className="logo">DashDash</p></Link>
+
+      <h3>User Registration</h3>
       <form onSubmit={handleSubmit}>
         <label>
           First Name:
@@ -70,8 +73,11 @@ const CompanyRegistrationForm = () => {
         <br />
         <button type="submit">Register</button>
       </form>
+      <p> &nbsp;</p>
+      <p>Do you have an account? <Link to="/AgentLogin">Login</Link></p>
+
     </div>
   );
 };
 
-export default CompanyRegistrationForm;
+export default AgentRegistration;

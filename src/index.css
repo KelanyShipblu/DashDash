@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +8,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.logo {
+  text-align: center;
+  color: rgba(204, 33, 33, 1);
+  font-size: 32px;
+  line-height: 32px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  letter-spacing: -2.24px;
+  box-shadow: 0px 2px 14px rgba(239, 239, 239, 0.25);
 }
 
 code {
@@ -33,7 +47,10 @@ body {
 /* Apply styles to headings */
 h1, h2, h3 {
   color: #333;
+  margin: 20px; /* Add spacing below h2 */
+
 }
+
 
 /* Apply styles to buttons */
 button {
@@ -47,6 +64,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  margin-top: 15px;
   box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
